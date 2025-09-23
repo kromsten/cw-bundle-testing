@@ -1,26 +1,24 @@
-use cosmwasm_schema::{cw_serde, QueryResponses};
+use serde::{Deserialize, Serialize};
 
-#[cw_serde]
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
 pub struct InstantiateMsg {
     pub count: i32,
 }
 
-#[cw_serde]
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
 pub enum ExecuteMsg {
     Increment {},
     Reset { count: i32 },
 }
 
-#[cw_serde]
-#[derive(QueryResponses)]
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
 pub enum QueryMsg {
     // GetCount returns the current count as a json-encoded number
-    #[returns(GetCountResponse)]
     GetCount {},
 }
 
 // We define a custom struct for each query response
-#[cw_serde]
+#[derive(Serialize, Deserialize, Clone, Debug, PartialEq)]
 pub struct GetCountResponse {
     pub count: i32,
 }

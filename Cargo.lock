@@ -196,13 +196,11 @@ checksum = "3e31ea183f6ee62ac8b8a8cf7feddd766317adfb13ff469de57ce033efd6a790"
 name = "bundle"
 version = "0.1.0"
 dependencies = [
- "cosmwasm-schema",
  "cosmwasm-std",
  "cw-multi-test",
  "cw-storage-plus",
  "cw2",
  "ed25519-zebra",
- "schemars",
  "serde",
  "thiserror 1.0.69",
 ]
