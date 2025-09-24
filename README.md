@@ -1,9 +1,9 @@
 # Bundle Tester
 
-Base 2.0 - 180KB
-NoJson 2.0 - 200K
+Base 2.0 - 180K
+NoJson 2.0 - 180K
 
-
+Base 2.0 - 244K
 NoJson 3.0 - 244K
 
 ## Creating a new repo from template
